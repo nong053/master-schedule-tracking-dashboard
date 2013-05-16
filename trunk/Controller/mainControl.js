@@ -130,7 +130,7 @@ $(document).ready(function(){
 		 }
 		 
 		 $("a[href=#tab2]").click(function(){
-			 $("#tooltipContent").hide();
+			 $(".tooltipContent").hide();
 			 $.ajax({
 				 url:'../View/byProject.jsp',
 				 type:'get',
@@ -150,6 +150,7 @@ $(document).ready(function(){
 		//script tab2 start
 		
 		 $(".ceo").live("click",function(){
+			
 			var id = this.id;
 			var thisActive= $(this).attr("active");
 			if($.trim(thisActive) == "clicked"){
@@ -186,7 +187,7 @@ $(document).ready(function(){
 		
 	
 	$(".cbo").live("click",function(){
-		
+		  
 			var id = this.id;
 			
 			var thisActive= $(this).attr("active");
@@ -639,7 +640,7 @@ $(document).ready(function(){
 	
 	
 	//check carrying cost
-	$(".boxTxtRed").live("mouseenter",function(e){
+	$(".boxTxtRed").live("mouseover",function(e){
 			
 			colorRateRed=$("#embedcolorRateRed").val();
 			colorRateYellow=$("#embedcolorRateYellow").val();
@@ -670,25 +671,25 @@ $(document).ready(function(){
 				success:function(data){
 					//alert(data[0][0]);
 					
-					$("#carryingPrice").html(data[0][0]);
-					$("#tooltipContent").css({"top":heightTooltip+"px","left":widthTooltip+"px","color":colorRateRed,"border":"2px solid "+colorRateRed}).show();
+					$("#carryingPrice").html(addCommas(data[0][0]));
+					$(".tooltipContent").css({"top":heightTooltip+"px","left":widthTooltip+"px","color":colorRateRed,"border":"2px solid "+colorRateRed}).show();
 				}
 			});
 			
 		//alert("hello");
-	}).live("mouseleave",function(){
-		$("#tooltipContent").hide();
+	}).live("mouseout",function(){
+		$(".tooltipContent").hide();
 	});
 	
 	
 	
 	
-	$(".boxTxtYellow").live("mouseenter",function(e){
+	$(".boxTxtYellow").live("mouseover",function(e){
 		colorRateRed=$("#embedcolorRateRed").val();
 		colorRateYellow=$("#embedcolorRateYellow").val();
 		colorRateGreen=$("#embedcolorRateGreen").val();
 
-		$("#tooltipContent").hide();
+		$(".tooltipContent").hide();
 		var widthTooltip=e.pageX+10;
 		var heightTooltip=e.pageY+10;
 		var overallId = this.id;
@@ -710,13 +711,13 @@ $(document).ready(function(){
 			success:function(data){
 				//alert(data[0][0]);
 				$("#carryingPrice").html(data[0][0]);
-				$("#tooltipContent").css({"top":heightTooltip+"px","left":widthTooltip+"px","color":"black","border":"2px solid "+colorRateYellow}).show();
+				$(".tooltipContent").css({"top":heightTooltip+"px","left":widthTooltip+"px","color":"black","border":"2px solid "+colorRateYellow}).show();
 			}
 		});
 		
 		//alert("hello");
-	}).live("mouseleave",function(){
-		$("#tooltipContent").hide();
+	}).live("mouseout",function(){
+		$(".tooltipContent").hide();
 	});
 	/*
 	$(".boxTxtGreen").live("mouseenter",function(e){
@@ -741,22 +742,24 @@ $(document).ready(function(){
 			success:function(data){
 				//alert(data[0][0]);
 				$("#carryingPrice").html(data[0][0]);
-				$("#tooltipContent").css({"top":heightTooltip+"px","left":widthTooltip+"px","color":colorRateGreen,"border":"2px solid "+colorRateGreen}).show();
+				$(".tooltipContent").css({"top":heightTooltip+"px","left":widthTooltip+"px","color":colorRateGreen,"border":"2px solid "+colorRateGreen}).show();
 			}
 		});
 		
 		//alert("hello");
 	}).live("mouseleave",function(){
-		$("#tooltipContent").hide();
+		$(".tooltipContent").hide();
 	});
 	*/
 
 	$("#cateProject").live("click",function(){
+		 $(".tooltipContent").hide();
 		$("a[href=#tab1]").click();
 	});
 
-	$(".contentColumn").live("mouseenter",function(e){
+	$(".contentColumn").live("mouseover",function(e){
 		$(this).css({"opacity":"0.8"});
+		 $(".tooltipContent").hide();
 	}).live("mouseleave",function(){
 		$(this).css({"opacity":"1"});
 	});;
@@ -764,14 +767,15 @@ $(document).ready(function(){
 	//click link new tab in pentaho
 	$(".projectBox").live("click",function(){
 		
-		newTab(this.id);
+		newTab(this.id,$("#embedParamMonth").val(),$("#embedParamYear").val());
 	});
-	var newTab = function(pjCode){
-	top.mantle_openTab("BSC-"+pjCode+"","BSC","pruksa-dashboard/index.jsp?pjCode="+pjCode+"");
+	var newTab = function(pjCode,paramMonth,paramYear){
+	top.mantle_openTab("BSC-"+pjCode+"","BSC","pruksa-dashboard/index.jsp?pjCode="+pjCode+"&paramMonth="+paramMonth+"&paramYear="+paramYear+"");
 	}
 
 	
 		$(".clickable").live("mouseenter",function(e){
+		$(".tooltipContent").hide();
 		$(this).css({"background":"#DBEEF4"});
 	}).live("mouseleave",function(){
 		$(this).css({"background":""});

@@ -121,10 +121,10 @@
 				htmlCEO+="					</div>";
 				htmlCEO+="						<div class=\"boxContent\">";
 				//url("images/ui-bg_highlight-soft_100_deedf7_1x100.png") repeat-x scroll 50% 50% #DEEDF7
-				//htmlCEO+="							<div class=\"boxRed\" style=\"background-image:url(../images/highlight.png)  repeat-x scroll 50% 50% #DEEDF7 \">"+data[0][1]+"</div>";
-				htmlCEO+="							<div class=\"boxRed\" style=\"background:"+data[0][0]+";\">"+data[0][1]+"</div>";
-				htmlCEO+="							<div class=\"boxYello\" style=\"background:"+data[0][3]+";\">"+data[0][4]+"</div>";
-				htmlCEO+="							<div class=\"boxGreen\" style=\"background:"+data[0][6]+";\">"+data[0][7]+"</div>";
+				//htmlCEO+="							<div class=\"boxRed\" style=\"background-image:url(../images/highlight.png)  repeat-x scroll 50% 50% #DEEDF7 \">"+parseInt(data[0][1])+"</div>";
+				htmlCEO+="							<div class=\"boxRed\" style=\"background:"+data[0][0]+";\">"+parseInt(data[0][1])+"</div>";
+				htmlCEO+="							<div class=\"boxYello\" style=\"background:"+data[0][3]+";\">"+parseInt(data[0][4])+"</div>";
+				htmlCEO+="							<div class=\"boxGreen\" style=\"background:"+data[0][6]+";\">"+parseInt(data[0][7])+"</div>";
 				htmlCEO+="						</div>";
 				htmlCEO+="					</div>";
 				htmlCEO+="					<div class=\"contentRBottom\">";
@@ -132,28 +132,28 @@
 				htmlCEO+="						#Days";
 				htmlCEO+="						</div>";
 				htmlCEO+="						<div class=\"boxContent\">";
-				htmlCEO+="							<div class=\"boxTxtRed\" id=\"ceoLmOverviewRedCarryingCost\" style=\"color:"+data[0][0]+";\">"+data[0][2];
+				htmlCEO+="							<div class=\"boxTxtRed\" id=\"ceoLmOverviewRedCarryingCost\" style=\"color:"+data[0][0]+";\">"+parseInt(data[0][2]);
 				htmlCEO+="								<ul>";
 				htmlCEO+="									<li class=\"user_level\">CEO</li>";
 				htmlCEO+="									<li class=\"current_level\">CEO</li>";
 				htmlCEO+="									<li class=\"current_data\">All</li>";
-				htmlCEO+="									<li class=\"current_days\">"+data[0][2]+"</li>";
+				htmlCEO+="									<li class=\"current_days\">"+parseInt(data[0][2])+"</li>";
 				htmlCEO+="								</ul>";
 				htmlCEO+="							</div>";
-				htmlCEO+="							<div class=\"boxTxtYellow\" id=\"ceoLmOverviewYellowCarryingCost\" style=\"color:"+data[0][3]+";\">"+data[0][5];
+				htmlCEO+="							<div class=\"boxTxtYellow\" id=\"ceoLmOverviewYellowCarryingCost\" style=\"color:"+data[0][3]+";\">"+parseInt(data[0][5]);
 				htmlCEO+="								<ul >";
 				htmlCEO+="									<li class=\"user_level\">CEO</li>";
 				htmlCEO+="									<li class=\"current_level\">CEO</li>";
 				htmlCEO+="									<li class=\"current_data\">All</li>";
-				htmlCEO+="									<li class=\"current_days\">"+data[0][5]+"</li>";
+				htmlCEO+="									<li class=\"current_days\">"+parseInt(data[0][5])+"</li>";
 				htmlCEO+="								</ul>";
 				htmlCEO+="							</div>";
-				htmlCEO+="							<div class=\"boxTxtGreen\" id=\"ceoLmOverviewGreenCarryingCost\" style=\"color:"+data[0][6]+";\">"+data[0][8];
+				htmlCEO+="							<div class=\"boxTxtGreen\" id=\"ceoLmOverviewGreenCarryingCost\" style=\"color:"+data[0][6]+";\">"+parseInt(data[0][8]);
 				htmlCEO+="								<ul>";
 				htmlCEO+="									<li class=\"user_level\">CEO</li>";
 				htmlCEO+="									<li class=\"current_level\">CEO</li>";
 				htmlCEO+="									<li class=\"current_data\">All</li>";
-				htmlCEO+="									<li class=\"current_days\">"+data[0][8]+"</li>";
+				htmlCEO+="									<li class=\"current_days\">"+parseInt(data[0][8])+"</li>";
 				htmlCEO+="								</ul>";
 				htmlCEO+="							</div>";
 				htmlCEO+="						</div>";
@@ -163,16 +163,16 @@
 				
 				/*
 				alert("color code="+data[0][0]);
-				alert("red project="+data[0][1]);
-				alert("red day="+data[0][2]);
+				alert("red project="+parseInt(data[0][1]));
+				alert("red day="+parseInt(data[0][2]));
 				
 				alert("color code="+data[0][3]);
-				alert("yellow project="+data[0][4]);
-				alert("yellow day="+data[0][5]);
+				alert("yellow project="+parseInt(data[0][4]));
+				alert("yellow day="+parseInt(data[0][5]));
 				
 				alert("color code="+data[0][6]);
-				alert("green project="+data[0][7]);
-				alert("green day="+data[0][8]);
+				alert("green project="+parseInt(data[0][7]));
+				alert("green day="+parseInt(data[0][8]));
 				*/
 			}
 		});
@@ -191,16 +191,16 @@
 				
 				/*
 				alert("color code="+data[0][0]);
-				alert("red project="+data[0][1]);
-				alert("red day="+data[0][2]);
+				alert("red project="+parseInt(data[0][1]));
+				alert("red day="+parseInt(data[0][2]));
 				
 				alert("color code="+data[0][3]);
-				alert("yellow project="+data[0][4]);
-				alert("yellow day="+data[0][5]);
+				alert("yellow project="+parseInt(data[0][4]));
+				alert("yellow day="+parseInt(data[0][5]));
 				
 				alert("color code="+data[0][6]);
-				alert("green project="+data[0][7]);
-				alert("green day="+data[0][8]);
+				alert("green project="+parseInt(data[0][7]));
+				alert("green day="+parseInt(data[0][8]));
 				*/
 				htmlCEO+="			<div class=\"contentBottom\">";
 				htmlCEO+="				<div class=\"contentL\">";
@@ -212,9 +212,9 @@
 				htmlCEO+="						#Projects";
 				htmlCEO+="						</div>";
 				htmlCEO+="						<div class=\"boxContent\">";
-				htmlCEO+="							<div class=\"boxRed\" style=\"background:"+data[0][0]+";\">"+data[0][1]+"</div>";
-				htmlCEO+="							<div class=\"boxYello\" style=\"background:"+data[0][3]+";\">"+data[0][4]+"</div>";
-				htmlCEO+="							<div class=\"boxGreen\" style=\"background:"+data[0][6]+";\">"+data[0][7]+"</div>";
+				htmlCEO+="							<div class=\"boxRed\" style=\"background:"+data[0][0]+";\">"+parseInt(data[0][1])+"</div>";
+				htmlCEO+="							<div class=\"boxYello\" style=\"background:"+data[0][3]+";\">"+parseInt(data[0][4])+"</div>";
+				htmlCEO+="							<div class=\"boxGreen\" style=\"background:"+data[0][6]+";\">"+parseInt(data[0][7])+"</div>";
 				htmlCEO+="						</div>";
 				htmlCEO+="					</div>";
 				htmlCEO+="					<div class=\"contentRBottom\">";
@@ -222,28 +222,28 @@
 				htmlCEO+="						#Days";
 				htmlCEO+="						</div>";
 				htmlCEO+="						<div class=\"boxContent\">";
-				htmlCEO+="							<div class=\"boxTxtRed\" id=\"ceoTmOverviewRedCarryingCost\" style=\"color:"+data[0][0]+";\">"+data[0][2];
+				htmlCEO+="							<div class=\"boxTxtRed\" id=\"ceoTmOverviewRedCarryingCost\" style=\"color:"+data[0][0]+";\">"+parseInt(data[0][2]);
 				htmlCEO+="								<ul>";
 				htmlCEO+="									<li class=\"user_level\">CEO</li>";
 				htmlCEO+="									<li class=\"current_level\">CEO</li>";
 				htmlCEO+="									<li class=\"current_data\">All</li>";
-				htmlCEO+="									<li class=\"current_days\">"+data[0][2]+"</li>";
+				htmlCEO+="									<li class=\"current_days\">"+parseInt(data[0][2])+"</li>";
 				htmlCEO+="								</ul>";
 				htmlCEO+="							</div>";
-				htmlCEO+="							<div class=\"boxTxtYellow\" id=\"ceoTmOverviewYellowCarryingCost\" style=\"color:"+data[0][3]+";\">"+data[0][5];
+				htmlCEO+="							<div class=\"boxTxtYellow\" id=\"ceoTmOverviewYellowCarryingCost\" style=\"color:"+data[0][3]+";\">"+parseInt(data[0][5]);
 				htmlCEO+="								<ul>";
 				htmlCEO+="									<li class=\"user_level\">CEO</li>";
 				htmlCEO+="									<li class=\"current_level\">CEO</li>";
 				htmlCEO+="									<li class=\"current_data\">All</li>";
-				htmlCEO+="									<li class=\"current_days\">"+data[0][5]+"</li>";
+				htmlCEO+="									<li class=\"current_days\">"+parseInt(data[0][5])+"</li>";
 				htmlCEO+="								</ul>";
 				htmlCEO+="							</div>";
-				htmlCEO+="							<div class=\"boxTxtGreen\" id=\"ceoTmOverviewGreenCarryingCost\" style=\"color:"+data[0][6]+";\">"+data[0][8];
+				htmlCEO+="							<div class=\"boxTxtGreen\" id=\"ceoTmOverviewGreenCarryingCost\" style=\"color:"+data[0][6]+";\">"+parseInt(data[0][8]);
 				htmlCEO+="								<ul>";
 				htmlCEO+="									<li class=\"user_level\">CEO</li>";
 				htmlCEO+="									<li class=\"current_level\">CEO</li>";
 				htmlCEO+="									<li class=\"current_data\">All</li>";
-				htmlCEO+="									<li class=\"current_days\">"+data[0][8]+"</li>";
+				htmlCEO+="									<li class=\"current_days\">"+parseInt(data[0][8])+"</li>";
 				htmlCEO+="								</ul>";
 				htmlCEO+="							</div>";
 				htmlCEO+="						</div>";
@@ -284,9 +284,9 @@
 				htmlCEO+="						#Projects";
 				htmlCEO+="					</div>";
 				htmlCEO+="						<div class=\"boxContent\">";
-				htmlCEO+="							<div class=\"boxRed\" style=\"background:"+data[0][0]+";\">"+data[0][1]+"</div>";
-				htmlCEO+="							<div class=\"boxYello\" style=\"background:"+data[0][3]+";\">"+data[0][4]+"</div>";
-				htmlCEO+="							<div class=\"boxGreen\" style=\"background:"+data[0][6]+";\">"+data[0][7]+"</div>";
+				htmlCEO+="							<div class=\"boxRed\" style=\"background:"+data[0][0]+";\">"+parseInt(data[0][1])+"</div>";
+				htmlCEO+="							<div class=\"boxYello\" style=\"background:"+data[0][3]+";\">"+parseInt(data[0][4])+"</div>";
+				htmlCEO+="							<div class=\"boxGreen\" style=\"background:"+data[0][6]+";\">"+parseInt(data[0][7])+"</div>";
 				htmlCEO+="						</div>";
 				htmlCEO+="					</div>";
 				htmlCEO+="					<div class=\"contentRBottom\">";
@@ -294,28 +294,28 @@
 				htmlCEO+="						#Days";
 				htmlCEO+="						</div>";
 				htmlCEO+="						<div class=\"boxContent\">";
-				htmlCEO+="							<div class=\"boxTxtRed\" id=\"ceoLmFirstRedCarryingCost\" style=\"color:"+data[0][0]+";\">"+data[0][2];
+				htmlCEO+="							<div class=\"boxTxtRed\" id=\"ceoLmFirstRedCarryingCost\" style=\"color:"+data[0][0]+";\">"+parseInt(data[0][2]);
 				htmlCEO+="								<ul>";
 				htmlCEO+="									<li class=\"user_level\">CEO</li>";
 				htmlCEO+="									<li class=\"current_level\">CEO</li>";
 				htmlCEO+="									<li class=\"current_data\">All</li>";
-				htmlCEO+="									<li class=\"current_days\">"+data[0][2]+"</li>";
+				htmlCEO+="									<li class=\"current_days\">"+parseInt(data[0][2])+"</li>";
 				htmlCEO+="								</ul>";
 				htmlCEO+="							</div>";
-				htmlCEO+="							<div class=\"boxTxtYellow\" id=\"ceoLmFirstYellowCarryingCost\" style=\"color:"+data[0][3]+";\">"+data[0][5];
+				htmlCEO+="							<div class=\"boxTxtYellow\" id=\"ceoLmFirstYellowCarryingCost\" style=\"color:"+data[0][3]+";\">"+parseInt(data[0][5]);
 				htmlCEO+="								<ul>";
 				htmlCEO+="									<li class=\"user_level\">CEO</li>";
 				htmlCEO+="									<li class=\"current_level\">CEO</li>";
 				htmlCEO+="									<li class=\"current_data\">All</li>";
-				htmlCEO+="									<li class=\"current_days\">"+data[0][5]+"</li>";
+				htmlCEO+="									<li class=\"current_days\">"+parseInt(data[0][5])+"</li>";
 				htmlCEO+="								</ul>";
 				htmlCEO+="							</div>";
-				htmlCEO+="							<div class=\"boxTxtGreen\" id=\"ceoLmFirstGreenCarryingCost\" style=\"color:"+data[0][6]+";\">"+data[0][8];
+				htmlCEO+="							<div class=\"boxTxtGreen\" id=\"ceoLmFirstGreenCarryingCost\" style=\"color:"+data[0][6]+";\">"+parseInt(data[0][8]);
 				htmlCEO+="								<ul>";
 				htmlCEO+="									<li class=\"user_level\">CEO</li>";
 				htmlCEO+="									<li class=\"current_level\">CEO</li>";
 				htmlCEO+="									<li class=\"current_data\">All</li>";
-				htmlCEO+="									<li class=\"current_days\">"+data[0][8]+"</li>";
+				htmlCEO+="									<li class=\"current_days\">"+parseInt(data[0][8])+"</li>";
 				htmlCEO+="								</ul>";
 				htmlCEO+="							</div>";
 				htmlCEO+="						</div>";
@@ -325,16 +325,16 @@
 				
 				/*
 				alert("color code="+data[0][0]);
-				alert("red project="+data[0][1]);
-				alert("red day="+data[0][2]);
+				alert("red project="+parseInt(data[0][1]));
+				alert("red day="+parseInt(data[0][2]));
 				
 				alert("color code="+data[0][3]);
-				alert("yellow project="+data[0][4]);
-				alert("yellow day="+data[0][5]);
+				alert("yellow project="+parseInt(data[0][4]));
+				alert("yellow day="+parseInt(data[0][5]));
 				
 				alert("color code="+data[0][6]);
-				alert("green project="+data[0][7]);
-				alert("green day="+data[0][8]);
+				alert("green project="+parseInt(data[0][7]));
+				alert("green day="+parseInt(data[0][8]));
 				*/
 				
 			}
@@ -352,16 +352,16 @@
 				//alert("4"+data);
 				/*
 				alert("color code="+data[0][0]);
-				alert("red project="+data[0][1]);
-				alert("red day="+data[0][2]);
+				alert("red project="+parseInt(data[0][1]));
+				alert("red day="+parseInt(data[0][2]));
 				
 				alert("color code="+data[0][3]);
-				alert("yellow project="+data[0][4]);
-				alert("yellow day="+data[0][5]);
+				alert("yellow project="+parseInt(data[0][4]));
+				alert("yellow day="+parseInt(data[0][5]));
 				
 				alert("color code="+data[0][6]);
-				alert("green project="+data[0][7]);
-				alert("green day="+data[0][8]);
+				alert("green project="+parseInt(data[0][7]));
+				alert("green day="+parseInt(data[0][8]));
 				*/
 				htmlCEO+="			<div class=\"contentBottom\">";
 				htmlCEO+="				<div class=\"contentL\">";
@@ -373,9 +373,9 @@
 				htmlCEO+="						#Projects";
 				htmlCEO+="						</div>";
 				htmlCEO+="						<div class=\"boxContent\">";
-				htmlCEO+="							<div class=\"boxRed\" style=\"background:"+data[0][0]+";\">"+data[0][1]+"</div>";
-				htmlCEO+="							<div class=\"boxYello\" style=\"background:"+data[0][3]+";\">"+data[0][4]+"</div>";
-				htmlCEO+="							<div class=\"boxGreen\" style=\"background:"+data[0][6]+";\">"+data[0][7]+"</div>";
+				htmlCEO+="							<div class=\"boxRed\" style=\"background:"+data[0][0]+";\">"+parseInt(data[0][1])+"</div>";
+				htmlCEO+="							<div class=\"boxYello\" style=\"background:"+data[0][3]+";\">"+parseInt(data[0][4])+"</div>";
+				htmlCEO+="							<div class=\"boxGreen\" style=\"background:"+data[0][6]+";\">"+parseInt(data[0][7])+"</div>";
 				htmlCEO+="						</div>";
 				htmlCEO+="					</div>";
 				htmlCEO+="					<div class=\"contentRBottom\">";
@@ -383,28 +383,28 @@
 				htmlCEO+="						#Days";
 				htmlCEO+="						</div>";
 				htmlCEO+="						<div class=\"boxContent\">";
-				htmlCEO+="							<div class=\"boxTxtRed\" id=\"ceoTmFirstRedCarryingCost\" style=\"color:"+data[0][0]+";\">"+data[0][2];
+				htmlCEO+="							<div class=\"boxTxtRed\" id=\"ceoTmFirstRedCarryingCost\" style=\"color:"+data[0][0]+";\">"+parseInt(data[0][2]);
 				htmlCEO+="								<ul>";
 				htmlCEO+="									<li class=\"user_level\">CEO</li>";
 				htmlCEO+="									<li class=\"current_level\">CEO</li>";
 				htmlCEO+="									<li class=\"current_data\">All</li>";
-				htmlCEO+="									<li class=\"current_days\">"+data[0][2]+"</li>";
+				htmlCEO+="									<li class=\"current_days\">"+parseInt(data[0][2])+"</li>";
 				htmlCEO+="								</ul>";
 				htmlCEO+="							</div>";
-				htmlCEO+="							<div class=\"boxTxtYellow\" id=\"ceoTmFirstYellowCarryingCost\" style=\"color:"+data[0][3]+";\">"+data[0][5];
+				htmlCEO+="							<div class=\"boxTxtYellow\" id=\"ceoTmFirstYellowCarryingCost\" style=\"color:"+data[0][3]+";\">"+parseInt(data[0][5]);
 				htmlCEO+="								<ul>";
 				htmlCEO+="									<li class=\"user_level\">CEO</li>";
 				htmlCEO+="									<li class=\"current_level\">CEO</li>";
 				htmlCEO+="									<li class=\"current_data\">All</li>";
-				htmlCEO+="									<li class=\"current_days\">"+data[0][5]+"</li>";
+				htmlCEO+="									<li class=\"current_days\">"+parseInt(data[0][5])+"</li>";
 				htmlCEO+="								</ul>";
 				htmlCEO+="							</div>";
-				htmlCEO+="							<div class=\"boxTxtGreen\" id=\"ceoTmFirstGreenCarryingCost\" style=\"color:"+data[0][6]+";\">"+data[0][8];
+				htmlCEO+="							<div class=\"boxTxtGreen\" id=\"ceoTmFirstGreenCarryingCost\" style=\"color:"+data[0][6]+";\">"+parseInt(data[0][8]);
 				htmlCEO+="								<ul>";
 				htmlCEO+="									<li class=\"user_level\">CEO</li>";
 				htmlCEO+="									<li class=\"current_level\">CEO</li>";
 				htmlCEO+="									<li class=\"current_data\">All</li>";
-				htmlCEO+="									<li class=\"current_days\">"+data[0][8]+"</li>";
+				htmlCEO+="									<li class=\"current_days\">"+parseInt(data[0][8])+"</li>";
 				htmlCEO+="								</ul>";
 				htmlCEO+="							</div>";
 				htmlCEO+="						</div>";
@@ -438,9 +438,9 @@
 				htmlCEO+="						#Projects";
 				htmlCEO+="					</div>";
 				htmlCEO+="						<div class=\"boxContent\">";
-				htmlCEO+="							<div class=\"boxRed\" style=\"background:"+data[0][0]+";\">"+data[0][1]+"</div>";
-				htmlCEO+="							<div class=\"boxYello\" style=\"background:"+data[0][3]+";\">"+data[0][4]+"</div>";
-				htmlCEO+="							<div class=\"boxGreen\" style=\"background:"+data[0][6]+";\">"+data[0][7]+"</div>";
+				htmlCEO+="							<div class=\"boxRed\" style=\"background:"+data[0][0]+";\">"+parseInt(data[0][1])+"</div>";
+				htmlCEO+="							<div class=\"boxYello\" style=\"background:"+data[0][3]+";\">"+parseInt(data[0][4])+"</div>";
+				htmlCEO+="							<div class=\"boxGreen\" style=\"background:"+data[0][6]+";\">"+parseInt(data[0][7])+"</div>";
 				htmlCEO+="						</div>";
 				htmlCEO+="					</div>";
 				htmlCEO+="					<div class=\"contentRBottom\">";
@@ -448,28 +448,28 @@
 				htmlCEO+="						#Days";
 				htmlCEO+="						</div>";
 				htmlCEO+="						<div class=\"boxContent\">";
-				htmlCEO+="							<div class=\"boxTxtRed\" id=\"ceoLmLastRedCarryingCost\" style=\"color:"+data[0][0]+";\">"+data[0][2];
+				htmlCEO+="							<div class=\"boxTxtRed\" id=\"ceoLmLastRedCarryingCost\" style=\"color:"+data[0][0]+";\">"+parseInt(data[0][2]);
 				htmlCEO+="								<ul>";
 				htmlCEO+="									<li class=\"user_level\">CEO</li>";
 				htmlCEO+="									<li class=\"current_level\">CEO</li>";
 				htmlCEO+="									<li class=\"current_data\">All</li>";
-				htmlCEO+="									<li class=\"current_days\">"+data[0][2]+"</li>";
+				htmlCEO+="									<li class=\"current_days\">"+parseInt(data[0][2])+"</li>";
 				htmlCEO+="								</ul>";
 				htmlCEO+="							</div>";
-				htmlCEO+="							<div class=\"boxTxtYellow\" id=\"ceoLmLastYellowCarryingCost\" style=\"color:"+data[0][3]+";\">"+data[0][5];
+				htmlCEO+="							<div class=\"boxTxtYellow\" id=\"ceoLmLastYellowCarryingCost\" style=\"color:"+data[0][3]+";\">"+parseInt(data[0][5]);
 				htmlCEO+="								<ul>";
 				htmlCEO+="									<li class=\"user_level\">CEO</li>";
 				htmlCEO+="									<li class=\"current_level\">CEO</li>";
 				htmlCEO+="									<li class=\"current_data\">All</li>";
-				htmlCEO+="									<li class=\"current_days\">"+data[0][5]+"</li>";
+				htmlCEO+="									<li class=\"current_days\">"+parseInt(data[0][5])+"</li>";
 				htmlCEO+="								</ul>";
 				htmlCEO+="							</div>";
-				htmlCEO+="							<div class=\"boxTxtGreen\" id=\"ceoLmLastGreenCarryingCost\" style=\"color:"+data[0][6]+";\">"+data[0][8];
+				htmlCEO+="							<div class=\"boxTxtGreen\" id=\"ceoLmLastGreenCarryingCost\" style=\"color:"+data[0][6]+";\">"+parseInt(data[0][8]);
 				htmlCEO+="								<ul>";
 				htmlCEO+="									<li class=\"user_level\">CEO</li>";
 				htmlCEO+="									<li class=\"current_level\">CEO</li>";
 				htmlCEO+="									<li class=\"current_data\">All</li>";
-				htmlCEO+="									<li class=\"current_days\">"+data[0][8]+"</li>";
+				htmlCEO+="									<li class=\"current_days\">"+parseInt(data[0][8])+"</li>";
 				htmlCEO+="								</ul>";
 				htmlCEO+="							</div>";
 				htmlCEO+="						</div>";
@@ -479,16 +479,16 @@
 				
 				/*
 				alert("color code="+data[0][0]);
-				alert("red project="+data[0][1]);
-				alert("red day="+data[0][2]);
+				alert("red project="+parseInt(data[0][1]));
+				alert("red day="+parseInt(data[0][2]));
 				
 				alert("color code="+data[0][3]);
-				alert("yellow project="+data[0][4]);
-				alert("yellow day="+data[0][5]);
+				alert("yellow project="+parseInt(data[0][4]));
+				alert("yellow day="+parseInt(data[0][5]));
 				
 				alert("color code="+data[0][6]);
-				alert("green project="+data[0][7]);
-				alert("green day="+data[0][8]);
+				alert("green project="+parseInt(data[0][7]));
+				alert("green day="+parseInt(data[0][8]));
 				*/
 			}
 		});
@@ -505,16 +505,16 @@
 				//alert("6"+data);
 				/*
 				alert("color code="+data[0][0]);
-				alert("red project="+data[0][1]);
-				alert("red day="+data[0][2]);
+				alert("red project="+parseInt(data[0][1]));
+				alert("red day="+parseInt(data[0][2]));
 				
 				alert("color code="+data[0][3]);
-				alert("yellow project="+data[0][4]);
-				alert("yellow day="+data[0][5]);
+				alert("yellow project="+parseInt(data[0][4]));
+				alert("yellow day="+parseInt(data[0][5]));
 				
 				alert("color code="+data[0][6]);
-				alert("green project="+data[0][7]);
-				alert("green day="+data[0][8]);
+				alert("green project="+parseInt(data[0][7]));
+				alert("green day="+parseInt(data[0][8]));
 				*/
 				htmlCEO+="			<div class=\"contentBottom\">";
 				htmlCEO+="				<div class=\"contentL\">";
@@ -526,9 +526,9 @@
 				htmlCEO+="						#Projects";
 				htmlCEO+="						</div>";
 				htmlCEO+="						<div class=\"boxContent\">";
-				htmlCEO+="							<div class=\"boxRed\" style=\"background:"+data[0][0]+";\">"+data[0][1]+"</div>";
-				htmlCEO+="							<div class=\"boxYello\" style=\"background:"+data[0][3]+";\">"+data[0][4]+"</div>";
-				htmlCEO+="							<div class=\"boxGreen\" style=\"background:"+data[0][6]+";\">"+data[0][7]+"</div>";
+				htmlCEO+="							<div class=\"boxRed\" style=\"background:"+data[0][0]+";\">"+parseInt(data[0][1])+"</div>";
+				htmlCEO+="							<div class=\"boxYello\" style=\"background:"+data[0][3]+";\">"+parseInt(data[0][4])+"</div>";
+				htmlCEO+="							<div class=\"boxGreen\" style=\"background:"+data[0][6]+";\">"+parseInt(data[0][7])+"</div>";
 				htmlCEO+="						</div>";
 				htmlCEO+="					</div>";
 				htmlCEO+="					<div class=\"contentRBottom\">";
@@ -536,28 +536,28 @@
 				htmlCEO+="						#Days";
 				htmlCEO+="						</div>";
 				htmlCEO+="						<div class=\"boxContent\">";
-				htmlCEO+="							<div class=\"boxTxtRed\" id=\"ceoTmLastRedCarryingCost\" style=\"color:"+data[0][0]+";\">"+data[0][2];
+				htmlCEO+="							<div class=\"boxTxtRed\" id=\"ceoTmLastRedCarryingCost\" style=\"color:"+data[0][0]+";\">"+parseInt(data[0][2]);
 				htmlCEO+="								<ul>";
 				htmlCEO+="									<li class=\"user_level\">CEO</li>";
 				htmlCEO+="									<li class=\"current_level\">CEO</li>";
 				htmlCEO+="									<li class=\"current_data\">All</li>";
-				htmlCEO+="									<li class=\"current_days\">"+data[0][2]+"</li>";
+				htmlCEO+="									<li class=\"current_days\">"+parseInt(data[0][2])+"</li>";
 				htmlCEO+="								</ul>";
 				htmlCEO+="							</div>";
-				htmlCEO+="							<div class=\"boxTxtYellow\" id=\"ceoTmLastYellowCarryingCost\" style=\"color:"+data[0][3]+";\">"+data[0][5];
+				htmlCEO+="							<div class=\"boxTxtYellow\" id=\"ceoTmLastYellowCarryingCost\" style=\"color:"+data[0][3]+";\">"+parseInt(data[0][5]);
 				htmlCEO+="								<ul>";
 				htmlCEO+="									<li class=\"user_level\">CEO</li>";
 				htmlCEO+="									<li class=\"current_level\">CEO</li>";
 				htmlCEO+="									<li class=\"current_data\">All</li>";
-				htmlCEO+="									<li class=\"current_days\">"+data[0][5]+"</li>";
+				htmlCEO+="									<li class=\"current_days\">"+parseInt(data[0][5])+"</li>";
 				htmlCEO+="								</ul>";
 				htmlCEO+="							</div>";
-				htmlCEO+="							<div class=\"boxTxtGreen\" id=\"ceoTmLastGreenCarryingCost\" style=\"color:"+data[0][6]+";\">"+data[0][8];
+				htmlCEO+="							<div class=\"boxTxtGreen\" id=\"ceoTmLastGreenCarryingCost\" style=\"color:"+data[0][6]+";\">"+parseInt(data[0][8]);
 				htmlCEO+="								<ul>";
 				htmlCEO+="									<li class=\"user_level\">CEO</li>";
 				htmlCEO+="									<li class=\"current_level\">CEO</li>";
 				htmlCEO+="									<li class=\"current_data\">All</li>";
-				htmlCEO+="									<li class=\"current_days\">"+data[0][8]+"</li>";
+				htmlCEO+="									<li class=\"current_days\">"+parseInt(data[0][8])+"</li>";
 				htmlCEO+="								</ul>";
 				htmlCEO+="							</div>";
 				htmlCEO+="						</div>";
