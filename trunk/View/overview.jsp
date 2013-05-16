@@ -1,6 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<link rel="stylesheet" href="../styles/dashboard_overview.css">
-<link href="../styles/dashboard_overviewPj.css" rel="stylesheet">
+
 <%
 String paramUserLevel=request.getParameter("paramUserLevel");
 String paramUserLevelData=request.getParameter("paramUserLevelData");
