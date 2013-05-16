@@ -38,8 +38,8 @@
 				type:'get',
 				dataType:'text',
 				success:function(data){
-				//alert($.trim(data));
-				userNameLogin=data;
+				alert($.trim(data));
+				userNameLogin=parseInt(data);
 				}
 			});
 		};
