@@ -1,9 +1,9 @@
 $(document).ready(function(){
 	//varible global
 	var userNameLogin="";
-	//var userNameLogin="1";//CEO
-	//var userNameLogin="527";//CBO
-	//var userNameLogin="10946";//SBU
+	//userNameLogin="1";//CEO
+	//userNameLogin="527";//CBO
+	//userNameLogin="10946";//SBU
 	
 	var user_level="";
 	var golbal_user_level="";
@@ -626,10 +626,13 @@ $(document).ready(function(){
 
 			}else if(user_level=="CBO"){
 			//multiloop
-				functionCBO(user_level,user_data,cboAll="");
+				//functionCBO(user_level,user_data,cboAll="");
+				functionCBO(user_level,user_data,cboAll="",golbal_user_level);
 			}else if(user_level=="SBU"){
 			//multiloop
-				functionSBU(user_level,user_data,parentCbo="");
+				//functionSBU(user_level,user_data,parentCbo="");
+				//user_level,user_data,parentCbo,golbal_user_level
+				functionSBU(user_level,user_data,parentCbo="",golbal_user_level);
 			}
 			
 			
