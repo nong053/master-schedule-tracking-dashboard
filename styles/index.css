@@ -40,8 +40,8 @@ body{
 	
 }
 /*Tootip*/
-#tooltipContent{
-	width:200px;
+.tooltipContent{
+	max-width:250px;
 	height:auto;
 	position:absolute;
 	z-index:10;
