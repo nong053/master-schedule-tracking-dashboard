@@ -1,6 +1,7 @@
-$(document).ready(function(){
+﻿$(document).ready(function(){
 	//varible global
-	var userNameLogin="1";//CEO
+	var userNameLogin="";
+	//var userNameLogin="1";//CEO
 	//var userNameLogin="527";//CBO
 	//var userNameLogin="10946";//SBU
 	
@@ -38,7 +39,7 @@ $(document).ready(function(){
 				dataType:'text',
 				success:function(data){
 				//alert($.trim(data));
-				//userNameLogin=data;
+				userNameLogin=data;
 				}
 			});
 		};
