@@ -25,13 +25,13 @@
 	<tr>
 		<td>
 			<select id="sorting">
-				<option>
+				<option value="Project Code">
 				Project Code
 				</option>
-				<option>
+				<option value="Ascending Project Start Date">
 				Asc Project Start Date
 				</option>
-				<option>
+				<option value="Descending Project Start Date">
 				Des Project Start Date
 				</option>
 				

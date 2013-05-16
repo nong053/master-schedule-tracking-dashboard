@@ -15,7 +15,7 @@
 			  "paramOrderBy":$("#sorting").val(),
 			  },
 		success:function(data){
-			//alert(data);
+			
 			var htmlCateProject="";
 			htmlCateProject+="<div id=\"accordion\">";
 			$.each(data,function(index,EntryIndex){
@@ -61,6 +61,7 @@
 			$("h3.ui-accordion-header").css({"padding":"0px","pdding-left":"25px","height":"33px"});
 			//alert(htmlCateProject);
 			$(".ui-accordion-content").css({"height":"0px","padding":"0px"});
+			
 		}
 	});
 	//--end

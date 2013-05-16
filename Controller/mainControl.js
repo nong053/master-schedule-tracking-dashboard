@@ -1,4 +1,4 @@
-﻿$(document).ready(function(){
+$(document).ready(function(){
 	//varible global
 	var userNameLogin="";
 	//var userNameLogin="1";//CEO
@@ -38,7 +38,7 @@
 				type:'get',
 				dataType:'text',
 				success:function(data){
-				alert($.trim(data));
+				//alert($.trim(data));
 				userNameLogin=parseInt(data);
 				}
 			});
@@ -518,8 +518,11 @@
 
 	
 	$("h3.ui-accordion-header").live("click",function(){
-		$(".ui-accordion-content").css({"height":"365px","padding":"2px"});
 		var projectCode = this.id;
+		$(".ui-accordion-content").css({"height":"342px","padding":"2px"});
+		$("ui-accordion-content p").css({"margin":"0px"});
+		$("#content"+projectCode+"").css({"margin":"0px"});
+		
 		$.ajax({
 			url:'../Model/project_status_by_project_drilldown.jsp',
 			type:'get',
