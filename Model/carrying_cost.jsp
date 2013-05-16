@@ -6,6 +6,9 @@
 String paramUserLevel=request.getParameter("paramUserLevel");
 String paramCurentLevel=request.getParameter("paramCurentLevel");
 String paramCurentData=request.getParameter("paramCurentData");
+String paramYear=request.getParameter("paramYear");
+String paramMonth=request.getParameter("paramMonth");
+
 String paramDays="";
 if(request.getParameter("paramDays").equals("null")){
 	 paramDays="0";
@@ -19,7 +22,7 @@ out.println(paramCurentData);
 out.println(paramDays);
 */
 overviewService  jndi = new  overviewService();
-String query="CALL MST_carrying_cost('"+paramUserLevel+"','"+paramCurentLevel+"','"+paramCurentData+"','"+paramDays+"' )";
+String query="CALL MST_carrying_cost('"+paramUserLevel+"','"+paramCurentLevel+"','"+paramCurentData+"','"+paramYear+"','"+paramMonth+"','"+paramDays+"' )";
 String field="1";
 jndi.selectByIndex(query,field);
 out.println(jndi.getData());

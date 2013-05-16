@@ -667,7 +667,8 @@ $(document).ready(function(){
 				url:'../Model/carrying_cost.jsp',
 				type:'get',
 				dataType:'json',
-				data:{'paramUserLevel':user_level,'paramCurentLevel':current_level,'paramCurentData':current_data,'paramDays':current_days},
+				//data:{'paramUserLevel':user_level,'paramCurentLevel':current_level,'paramCurentData':current_data,'paramDays':current_days},
+				data:{'paramUserLevel':user_level,'paramCurentLevel':current_level,'paramCurentData':current_data,'paramYear':$("#embedParamYear").val(),'paramMonth':$("#embedParamMonth").val(),'paramDays':current_days},
 				success:function(data){
 					//alert(data[0][0]);
 					
@@ -707,9 +708,10 @@ $(document).ready(function(){
 			url:'../Model/carrying_cost.jsp',
 			type:'get',
 			dataType:'json',
-			data:{'paramUserLevel':user_level,'paramCurentLevel':current_level,'paramCurentData':current_data,'paramDays':current_days},
+				//'CBO','CBO','CBO1','2013','04','10'
+			data:{'paramUserLevel':user_level,'paramCurentLevel':current_level,'paramCurentData':current_data,'paramYear':$("#embedParamYear").val(),'paramMonth':$("#embedParamMonth").val(),'paramDays':current_days},
 			success:function(data){
-				//alert(data[0][0]);
+				
 				$("#carryingPrice").html(data[0][0]);
 				$(".tooltipContent").css({"top":heightTooltip+"px","left":widthTooltip+"px","color":"black","border":"2px solid "+colorRateYellow}).show();
 			}
