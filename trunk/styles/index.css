@@ -1,0 +1,79 @@
+*{
+	font-family:tahoma;
+	font-size:13px;
+}
+body{
+	margin:0px;
+	
+}
+#body{
+	
+	width:1000px;
+	/*height:1000px;*/
+	margin:auto;
+	
+}
+#body #header{
+
+	padding-top:5px;
+	padding-bottom:5px;
+	background:#008EC3;
+	width:1000px;
+	color:white;
+	font-weight:bold;
+	border-radius:5px;
+	
+	
+}
+
+	
+
+#body #mainContentPruksa{
+	/*border:1px solid #008EC3;*/
+	width:1000px;
+	/*height:500px;*/
+	border-radius:5px;
+	margin-top:2px;
+	display:none;
+	
+	
+	
+}
+/*Tootip*/
+#tooltipContent{
+	width:200px;
+	height:auto;
+	position:absolute;
+	z-index:10;
+	background:white;
+	display:none;
+	border-radius:0px;
+	border:1px solid #cccccc;
+	cursor:pointer;
+	padding:5px;
+	font-weight:bold;
+	display:hidden;
+}
+#carryingPrice{
+	display:inline;
+}
+
+#loading {
+	display: none;
+	position: absolute;
+	z-index: 10000;
+	color: #000000;
+	background: #ffffff;
+	font-weight: bold;
+	padding: 10px;
+	border-radius: 5px;
+	border: 1px solid #FFAF0F;
+}
+
+#loading #loadText {
+	display: inline;
+}
+
+#loading #loadImage {
+	display: inline;
+}

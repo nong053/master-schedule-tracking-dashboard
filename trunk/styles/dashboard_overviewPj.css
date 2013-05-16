@@ -1,0 +1,117 @@
+.overviewPj{
+	
+}
+.overviewPj > .mainContentTitle{
+	/*background:#cccccc;*/
+	width:990px;
+	height:55px;
+	/*border:1px solid red;*/
+}
+.overviewPj > .mainContentTitle > .title{
+	/*border:1px solid red;*/
+	background:#008EC3;
+	border:1px solid #008EC3;
+	width:103.5px;
+	height:50px;
+	float:left;
+	color:white;
+	font-weight:bold;
+	margin:2px;
+	text-align:center;
+	padding-top:2px;
+	
+}
+
+.overviewPj > .mainContentContent{
+	/*background:#cccccc;
+	border:1px solid red;*/
+	width:990px;
+	height:75px;
+	
+	
+}
+.overviewPj > .mainContentContent > .content{
+	border:1px solid #008EC3;
+	background:white;
+	height:70px;
+	float:left;
+	width:103.5px;
+	margin:2px;
+}
+.projectBox{
+	display:block;
+	 height: 70px;
+	 cursor:pointer;
+	
+}
+.projectBox > .title{
+	font-weight:bold;
+	font-align:center;
+	color:black;
+	padding:5px;
+}
+.projectBox .projectTop{
+	width:103.5px;
+	height:35px;
+	
+}
+.left{
+	height:35px;
+	width:43px;
+	float:left;
+	text-align:center;
+	
+}
+ .right{
+	height:35px;
+	width:56px;
+	float:left;
+}
+.projectBox .projectBottom{
+	width:103.5px;
+	height:35px;
+	border-top:1px solid #008EC3;
+}
+.boxColorRed{
+	width:55px;
+	height:30px;
+	background:red;
+	margin:2px;
+	text-align:center;
+}
+.boxColorYellow{
+	width:55px;
+	height:30px;
+	background:yellow;
+	margin:2px;
+	text-align:center;
+}
+.boxColorGreen{
+	width:55px;
+	height:30px;
+	background:green;
+	margin:2px;
+	text-align:center;
+	color:black;
+	
+}
+.boxText{
+	padding-top:5px;
+}
+.titleProject{
+	display:inline;
+	float:left;
+	width:800px;
+	
+}
+.titleProject .txt{
+	padding-top:8px;
+}
+.statusProjectColor{
+	display:inline;
+	float: right;
+	width:33px;
+	height:31px;
+	background-image:url(../images/delay.png);
+	
+}

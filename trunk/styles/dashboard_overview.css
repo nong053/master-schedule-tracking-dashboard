@@ -1,0 +1,233 @@
+.overviewContentTitle{
+	
+}
+#tooltipContent{
+	display:none;
+}
+.overviewContentTitle .titleColumn{
+	width:150px;
+	height:40px;
+	background:#008EC3;
+	float:left;
+	margin:2px;
+	color:white;
+	font-weight:bold;
+	text-align:center;
+	padding-top:5px;
+}
+.overviewContentTitle .titleColumns{
+	
+	width:275px;
+	height:40px;
+	background:#008EC3;
+	float:left;
+	margin:2px;
+	color:white;
+	font-weight:bold;
+	text-align:center;
+	padding-top:5px;
+}
+
+
+
+.overviewContent .contentColumn{
+	width:148px;
+	height:110px;
+	float:left;
+	margin:2px;
+	border:1px solid #008EC3;
+	
+	
+}
+.overviewContent .contentColumn .text{
+	text-align:left;
+	font-weight:bold;
+	padding-top:5px;
+	padding-left:5px;
+	/*color:black;*/
+	
+}
+.overviewContent .contentColumns{
+	
+	width:273px;
+	height:110px;
+	float:left;
+	margin:2px;
+	border:1px solid #008EC3;
+	background:white;
+	
+}
+.overviewContent .contentColumns .contenttop{
+	width:100%;
+	padding-top:2px;
+	height:48%;
+}
+.contentL{
+	width:30px;
+	
+	float:left;
+	height:100%;
+	
+	
+}
+.contentL .contentTxt{
+	padding-top:15px;
+	text-align:center;
+}
+.contentR{
+	width:238px;
+
+	float:left;
+	height:98%;
+	
+	
+}
+ .contentR .contentRTop{
+	
+	height:50%;
+	
+}
+.contentR .contentRTop .titleContent{
+	width:60px;
+	height:25px;
+	
+	float:left;
+	
+}
+ .contentR .contentRTop .boxContent{
+	width:172px;
+	height:25px;
+	background-image:url("../images/highlight.png") repeat-x scroll 50% 50%;
+	float:left;
+}
+ .contentR .contentRTop .boxContent .boxRed{
+
+width:52px;
+float:left;
+/*background:red;*/
+text-align:center;
+padding-top:5px;
+height:20px;
+}
+ .contentR .contentRTop .boxContent .boxYello{
+
+width:52px;
+float:left;
+/*background:yellow;*/
+text-align:center;
+padding-top:5px;
+height:20px;
+}
+.contentR .contentRTop .boxContent .boxGreen{
+
+width:52px;
+float:left;
+/*background:green;*/
+text-align:center;
+padding-top:5px;
+height:20px;
+
+}
+ .contentR .contentRBottom{
+	
+	height:48%;
+	
+}
+
+ .contentR .contentRBottom .titleContent{
+	width:60px;
+	height:25px;
+	float:left;
+}
+ .contentR .contentRBottom .boxContent{
+	width:172px;
+	height:25px;
+	
+	float:left;
+	
+}
+.contentR .contentRBottom .boxContent .boxTxtRed{
+
+width:52px;
+float:left;
+color:red;
+text-align:center;
+padding-top:2px;
+height:20px;
+cursor:pointer;
+	
+}
+.contentR .contentRBottom .boxContent .boxTxtYellow{
+padding-top:2px;
+height:20px;
+width:52px;
+float:left;
+color:#CDCD00;
+text-align:center;
+cursor:pointer;
+}
+ .contentR .contentRBottom .boxContent .boxTxtGreen{
+padding-top:2px;
+height:20px;
+width:52px;
+float:left;
+color:green;
+text-align:center;
+cursor:pointer;
+}
+
+
+
+
+
+
+.overviewContent .contentColumns .contentBottom{
+	width:100%;
+	border-top:1px solid #008EC3;
+	height:50%;
+	padding-top:2px;
+}
+.ceo{
+	background:#008EC3;
+	cursor:pointer;
+	color:white;
+}
+.cbo{
+	background:#93cddd;
+	cursor:pointer;
+	color:white;
+}
+.sbu{
+	background:#dbeef4;
+	cursor:pointer;
+	color:black;
+}
+.ofFirstDayNumber{
+	
+	display:inline;
+}
+#cateProject{
+	cursor:pointer;
+	height:40px;
+}
+.txtNumber{
+	text-align:right;
+}
+
+.textMark{
+font-weight:bold;
+display:inline;
+font-size:15px;
+}
+.textMarkCBO{
+font-weight:bold;
+display:inline;
+font-size:15px;
+
+}
+.textMarkSBU{
+font-weight:bold;
+display:inline;
+font-size:10px;
+
+}

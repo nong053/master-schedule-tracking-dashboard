@@ -1,0 +1,92 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Pruksa Dashboard</title>
+<link rel="stylesheet" href="../styles/index.css">
+
+<!-- load stylesheet แบบ external-->
+		
+		<link href="../styles/kendo.common.min.css" rel="stylesheet">
+		<link href="../styles/kendo.default.min.css" rel="stylesheet">
+		<link href="../jqueryUI/css/cupertino/jquery-ui-1.8.21.custom.css" rel="stylesheet">
+		 <link href="../styles/kendo.dataviz.min.css" rel="stylesheet">
+		
+		 <!-- load stylesheet-->
+		 <!-- load javascript-->
+		<script src="../js/jquery.min.js"></script>  
+		
+		<script type="text/javascript" src="../js/jquery.corner.js"></script>
+		<script src="../js/kendo.all.min.js" type="text/javascript"></script>
+		<script src="../js/kendo.dataviz.min.js" type="text/javascript"></script>
+		<script type="text/javascript" src="../js/jquery.sparkline.min.js"  type="text/javascript"></script> 
+		<script type="text/javascript" src="../jqueryUI/js/jquery-ui-1.8.21.custom.min.js"  type="text/javascript"></script>
+		<!-- load javascript-->
+		
+		<script src="../Controller/mainControl.js" type="text/javascript"></script>
+		<script src="../Controller/CEO.js" type="text/javascript"></script>
+		<script src="../Controller/CBO.js" type="text/javascript"></script>
+		<script src="../Controller/SBU.js" type="text/javascript"></script>
+		<script src="../Controller/PJ.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="loading">
+		<span id="loadText">Loading... </span>
+		<div id="loadImage">
+			<img src="images/loader.gif">
+		</div>
+</div>
+<div id="tooltipContent" style="display: none;">Carrying Cost= <div id="carryingPrice"></div> บาท<br>
+(Excluded Management Cost)</div>
+	<div id="body">
+		<div id="header">
+		<center>
+			<table width="900">
+				<tr>
+					<td>Year:</td>
+					<td id="paramYearArea">
+					
+						
+					</td>
+					<td>Month:</td>
+					<td id="paramMonthArea">
+					
+					</td>
+					<td>#of First Days:</td>
+					<td>
+					<input type="text" value="100" name="paramOfFirstDay" id="paramOfFirstDay">
+					</td>
+					<td><button id="submit">OK</button></td>
+					
+				</tr>
+			</table>
+			</center>
+		</div>
+		<div id="mainContentPruksa" >
+			<div id="content">
+
+					<div id="tabPruksa">
+						<ul>
+							<li>
+							<a href="#tab1"> Overview</a>
+							</li>
+							<li>
+							<a href="#tab2"> By Project</a>
+							</li>
+							
+						
+						</ul>
+						<div id="tab1">
+						Content1
+						</div>
+						<div id="tab2">
+						Content2
+						</div>
+						
+					</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
