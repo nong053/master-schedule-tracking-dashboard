@@ -17,7 +17,9 @@ body{
 
 	padding-top:5px;
 	padding-bottom:5px;
-	background:#008EC3;
+	
+	background:#0505A4;
+	/*background:#008EC3; default*/
 	width:1000px;
 	color:white;
 	font-weight:bold;

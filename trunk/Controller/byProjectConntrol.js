@@ -38,7 +38,7 @@
 					//alert("Ontime");
 					imageStatusProject="../images/ontime.png";
 				}
-				htmlCateProject+="<h3 id='"+EntryIndex[0]+"'><div class='titleProject'><div class='txt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+EntryIndex[0]+"::"+EntryIndex[1]+"::"+EntryIndex[2]+"</div></div><div class='statusProjectColor' style='background-image:url("+imageStatusProject+");'></div></h3>";
+				htmlCateProject+="<h3 id='"+EntryIndex[0]+"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div class='statusProjectColor' style='background-image:url("+imageStatusProject+");'></div><div class='titleProject'><div class='txt'>&nbsp;&nbsp;"+EntryIndex[0]+"::"+EntryIndex[1]+"::"+EntryIndex[2]+"</div></div></h3>";
 				htmlCateProject+="<div>";
 				htmlCateProject+="<p id='content"+EntryIndex[0]+"'>";
 				//htmlCateProject+="test content";
