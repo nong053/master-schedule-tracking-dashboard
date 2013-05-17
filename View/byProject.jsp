@@ -4,7 +4,11 @@
 		<script src="../js/jquery.min.js"></script>
 		<link href="../styles/kendo.common.min.css" rel="stylesheet">
 		<link href="../styles/kendo.default.min.css" rel="stylesheet">
+		<!--
+		
 		<link href="../jqueryUI/css/cupertino/jquery-ui-1.8.21.custom.css" rel="stylesheet">
+		-->
+		<link href="../jqueryUI/css/cupertino/jquery-ui-1.10.3.custom.min.css" rel="stylesheet">
 		 <link href="../styles/kendo.dataviz.min.css" rel="stylesheet">
 		
 		 <!-- load stylesheet-->
@@ -15,7 +19,11 @@
 		<script src="../js/kendo.all.min.js" type="text/javascript"></script>
 		<script src="../js/kendo.dataviz.min.js" type="text/javascript"></script>
 		<script type="text/javascript" src="../js/jquery.sparkline.min.js"  type="text/javascript"></script> 
+		<!--
+		
 		<script type="text/javascript" src="../jqueryUI/js/jquery-ui-1.8.21.custom.min.js"  type="text/javascript"></script>
+		-->
+		<script type="text/javascript" src="../jqueryUI/js/jquery-ui-1.10.3.custom.min.js"  type="text/javascript"></script>
 	    <script src="../Controller/byProjectConntrol.js"></script>
 		<!-- load javascript-->
 		

@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	//varible global
-	var userNameLogin="";
+	//var userNameLogin="";
 	//userNameLogin="1";//CEO
 	//userNameLogin="527";//CBO
 	//userNameLogin="10946";//SBU
@@ -39,7 +39,7 @@ $(document).ready(function(){
 				dataType:'text',
 				success:function(data){
 				//alert($.trim(data));
-				userNameLogin=parseInt(data);
+				userNameLogin=$.trim(data);
 				}
 			});
 		};
@@ -357,11 +357,11 @@ $(document).ready(function(){
 	htmlTableGird+="<thead>";
 		htmlTableGird+="<tr>";
 			htmlTableGird+="<th data-field=\"Field1\" ><center><b>Activity</b></center></th>";
-			htmlTableGird+="<th data-field=\"Field2\" ><center><b>Accum Days<br>Target</b></center></th>";
+			htmlTableGird+="<th data-field=\"Field2\" ><center><b>Accum <br>Target Day</b></center></th>";
 			htmlTableGird+="<th data-field=\"Field3\" ><center><b>Target<br>Date</b></center></th>";
 			htmlTableGird+="<th data-field=\"Field4\" ><center><b>Accum<br>Actual Day</b></center></th>";
 			htmlTableGird+="<th data-field=\"Field5\" ><center><b>Actual<br>Date</b></center></th>";
-			htmlTableGird+="<th data-field=\"Field6\" ><center><b>Accum <br>Delay Days</b></center></th>";
+			htmlTableGird+="<th data-field=\"Field6\" ><center><b>Delay Days</b></center></th>";
 			htmlTableGird+="<th data-field=\"Field7\" ><center><b>Responsibility</b></center></th>";
 			htmlTableGird+="<th data-field=\"Field8\" ><center><b>Revised Target<br>(if no action)</b></center></th>";
 		htmlTableGird+="</tr>";
@@ -506,6 +506,7 @@ $(document).ready(function(){
 				 data:gridData
 		 },
            scrollable:true,
+		   sortable: true,
            columns:$title
  });
 
@@ -568,11 +569,11 @@ $(document).ready(function(){
 					
 					
 					objGird+="Field1:\""+EntryIndex[0]+"\",";
-					objGird+="Field2:\"<div class='txtNumber'>"+addCommas(EntryIndex[1])+"</div>\",";
+					objGird+="Field2:\"<div class='txtNumber'>"+EntryIndex[1]+"</div>\",";
 					objGird+="Field3:\""+EntryIndex[2]+"\",";
-					objGird+="Field4:\"<div class='txtNumber'>"+addCommas(EntryIndex[3])+"</div>\",";
+					objGird+="Field4:\"<div class='txtNumber'>"+EntryIndex[3]+"</div>\",";
 					objGird+="Field5:\""+actualDate+"\",";
-					objGird+="Field6:\"<div class='txtNumber'>"+addCommas(EntryIndex[5])+"</div>\",";
+					objGird+="Field6:\"<div class='txtNumber'>"+EntryIndex[5]+"</div>\",";
 					objGird+="Field7:\"<div class='txtNumber'>"+responsibility+"</div>\",";
 					objGird+="Field8:\"<div class='txtNumber'>"+RevisedTarget+"</div>\"";
 					objGird+="}";
@@ -781,9 +782,12 @@ $(document).ready(function(){
 	var newTab = function(pjCode,paramMonth,paramYear){
 	top.mantle_openTab("BSC-"+pjCode+"","BSC","pruksa-dashboard/index.jsp?pjCode="+pjCode+"&paramMonth="+paramMonth+"&paramYear="+paramYear+"");
 	}
+	$("body").live("mouseover",function(e){
+			$(".tooltipContent").hide();
+	});
 
 	
-		$(".clickable").live("mouseenter",function(e){
+		$(".clickable").live("mouseover",function(e){
 		$(".tooltipContent").hide();
 		$(this).css({"background":"#DBEEF4"});
 	}).live("mouseleave",function(){
