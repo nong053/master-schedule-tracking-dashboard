@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	//varible global
-	//var userNameLogin="";
+	var userNameLogin="";
 	//userNameLogin="1";//CEO
 	//userNameLogin="527";//CBO
 	//userNameLogin="10946";//SBU
@@ -37,13 +37,17 @@ $(document).ready(function(){
 				url:'../Model/getUserPentaho.jsp',
 				type:'get',
 				dataType:'text',
+				async:false,
 				success:function(data){
-				//alert($.trim(data));
 				userNameLogin=$.trim(data);
 				}
 			});
 		};
 	functionGetUser();
+	//alert(userNameLogin);
+	if(userNameLogin=="joe"){
+		userNameLogin="1";
+	}
 		//--end
 	
 		//insert year parameter
