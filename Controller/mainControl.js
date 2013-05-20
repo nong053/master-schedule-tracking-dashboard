@@ -55,6 +55,7 @@ $(document).ready(function(){
 			url:'../Model/paramYear.jsp',
 			type:'get',
 			dataType:'html',
+			async:false,
 			success:function(data){
 				//alert(data);
 				$("#paramYearArea").html(data);
@@ -62,18 +63,20 @@ $(document).ready(function(){
 			}
 		});
 		//--end
-		
-		//insert month parameter
-		$.ajax({
-			url:'../Model/paramMonth.jsp',
-			type:'get',
-			dataType:'html',
-			success:function(data){
-				//alert(data);
-				$("#paramMonthArea").html(data);
-				$("#paramMonth").kendoDropDownList();
-			}
-		});
+		//console.log($("#paramYear").get());
+		$("#paramYear").live("change",function(){
+					$.ajax({
+						url:'../Model/paramMonth.jsp',
+						type:'get',
+						dataType:'html',
+						data:{'paramYear':$(this).val()},
+						success:function(data){
+							$("#paramMonthArea").html(data);
+							$("#paramMonth").kendoDropDownList();
+						}
+					});
+			});	
+			$("#paramYear").change();
 		//--end
 		//set of frist day parameter
 		$("#paramOfFirstDay").click(function(){
@@ -529,7 +532,7 @@ $("#"+gridName+" tbody tr").each(function(){
 });
 }
 //k-header
-$(".k-header").live("click",function(){
+$(".k-grid-header-wrap table thead tr th.k-header").live("click",function(){
 	var gridName=($(this).parent().parent().parent().parent().parent().parent().parent().attr("id"));
 	setTextForSort(gridName);
 });
