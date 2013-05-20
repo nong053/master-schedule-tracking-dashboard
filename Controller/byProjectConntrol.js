@@ -15,7 +15,6 @@
 			  "paramOrderBy":$("#sorting").val(),
 			  },
 		success:function(data){
-			
 			var htmlCateProject="";
 			htmlCateProject+="<div id=\"accordion\">";
 			$.each(data,function(index,EntryIndex){
@@ -30,13 +29,19 @@
 				</p>
 				</div>
 				 */
+				/*
 				var imageStatusProject="";
 				if(EntryIndex[3]=="Delay"){
-					//alert("Delay");
-					imageStatusProject="../images/delay.png";
+					imageStatusProject="../images/statusPj/delay.png";
 				}else if(EntryIndex[3]=="Ontime"){
-					//alert("Ontime");
-					imageStatusProject="../images/ontime.png";
+					imageStatusProject="../images/statusPj/ontime.png";
+				}
+				*/
+				var imageStatusProject="";
+				if(EntryIndex[4]!=""){
+					imageStatusProject=EntryIndex[4];
+				}else{
+					imageStatusProject="";
 				}
 				htmlCateProject+="<h3 id='"+EntryIndex[0]+"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div class='statusProjectColor' style='background-image:url("+imageStatusProject+");'></div><div class='titleProject'><div class='txt'>&nbsp;&nbsp;"+EntryIndex[0]+"::"+EntryIndex[1]+"::"+EntryIndex[2]+"</div></div></h3>";
 				htmlCateProject+="<div>";
