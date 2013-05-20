@@ -19,7 +19,7 @@ out.print("paramOrderBy="+paramOrderBy);
 byProjectService  jndi = new  byProjectService();
 //'CBO','2013','04','CBO1','Ascending Project Start Date'
 String query="CALL MST_project_status_by_project('"+paramUserLevel+"','"+paramYear+"','"+paramMonth+"','"+paramUserData+"','"+paramOrderBy+"')";
-String field="1,2,3,4";
+String field="1,2,3,4,5";
 jndi.selectByIndex(query,field);
 out.println(jndi.getData());
 %>

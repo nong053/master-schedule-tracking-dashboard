@@ -46,7 +46,7 @@ $(document).ready(function(){
 	functionGetUser();
 	//alert(userNameLogin);
 	if(userNameLogin=="joe"){
-		userNameLogin="1";
+		userNameLogin="00000001";
 	}
 		//--end
 	
@@ -439,6 +439,7 @@ $(document).ready(function(){
 	              },
 	              {
 	                  field: "Field2",
+					  type: "number" 
 					  //width: 310
 				 },
 	              {
@@ -513,8 +514,25 @@ $(document).ready(function(){
 		   sortable: true,
            columns:$title
  });
+//$("#"+gridName+"  tbody tr td:eq(1)").addClass("txtNumber");
+setTextForSort(gridName);
 
 };
+var setTextForSort = function(gridName){
+$("#"+gridName+" tbody tr").each(function(){
+     	 $("td:eq(1)",this).addClass("txtNumber"); 
+		 $("td:eq(3)",this).addClass("txtNumber"); 
+		 $("td:eq(5)",this).addClass("txtNumber"); 
+		 $("td:eq(6)",this).addClass("txtNumber"); 
+		 $("td:eq(7)",this).addClass("txtNumber"); 
+     	
+});
+}
+//k-header
+$(".k-header").live("click",function(){
+	var gridName=($(this).parent().parent().parent().parent().parent().parent().parent().attr("id"));
+	setTextForSort(gridName);
+});
 //--end
 //grid();
 
@@ -569,17 +587,14 @@ $(document).ready(function(){
 					}else{
 						RevisedTarget=EntryIndex[7];
 					}
-					
-					
-					
 					objGird+="Field1:\""+EntryIndex[0]+"\",";
-					objGird+="Field2:\"<div class='txtNumber'>"+EntryIndex[1]+"</div>\",";
+					objGird+="Field2:\""+EntryIndex[1]+"\",";
 					objGird+="Field3:\""+EntryIndex[2]+"\",";
-					objGird+="Field4:\"<div class='txtNumber'>"+EntryIndex[3]+"</div>\",";
+					objGird+="Field4:\""+EntryIndex[3]+"\",";
 					objGird+="Field5:\""+actualDate+"\",";
-					objGird+="Field6:\"<div class='txtNumber'>"+EntryIndex[5]+"</div>\",";
-					objGird+="Field7:\"<div class='txtNumber'>"+responsibility+"</div>\",";
-					objGird+="Field8:\"<div class='txtNumber'>"+RevisedTarget+"</div>\"";
+					objGird+="Field6:\""+EntryIndex[5]+"\",";
+					objGird+="Field7:\""+responsibility+"\",";
+					objGird+="Field8:\""+RevisedTarget+"\"";
 					objGird+="}";
 				i++;	
 				});
@@ -819,5 +834,4 @@ $(document).ready(function(){
 	
 	}); 
 
-	
 });
