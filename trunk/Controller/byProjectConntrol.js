@@ -15,6 +15,7 @@
 			  "paramOrderBy":$("#sorting").val(),
 			  },
 		success:function(data){
+			
 			var htmlCateProject="";
 			htmlCateProject+="<div id=\"accordion\">";
 			$.each(data,function(index,EntryIndex){
