@@ -580,22 +580,22 @@ $(".k-grid-header-wrap table thead tr th.k-header").live("click",function(){
 					var responsibility="";
 					var RevisedTarget="";
 					if(EntryIndex[4]==null){
-						actualDate="";
+						actualDate=0;
 					}else{
-						actualDate=EntryIndex[4];
+						actualDate=parseInt(EntryIndex[4]);
 					}
 					
 					if(EntryIndex[6]==null){
-						responsibility="";
+						responsibility=0;
 					}else{
-						responsibility=EntryIndex[6];
+						responsibility=parseInt(EntryIndex[6]);
 					}
 
 					
 					if(RevisedTarget[7]==null){
-						RevisedTarget="";
+						RevisedTarget=0;
 					}else{
-						RevisedTarget=EntryIndex[7];
+						RevisedTarget=parseInt(EntryIndex[7]);
 					}
 					objGird+="Field1:\""+EntryIndex[0]+"\",";
 					objGird+="Field2:\""+parseInt(EntryIndex[1])+"\",";
@@ -603,8 +603,8 @@ $(".k-grid-header-wrap table thead tr th.k-header").live("click",function(){
 					objGird+="Field4:\""+parseInt(EntryIndex[3])+"\",";
 					objGird+="Field5:\""+actualDate+"\",";
 					objGird+="Field6:\""+parseInt(EntryIndex[5])+"\",";
-					objGird+="Field7:\""+parseInt(responsibility)+"\",";
-					objGird+="Field8:\""+parseInt(RevisedTarget)+"\"";
+					objGird+="Field7:\""+responsibility+"\",";
+					objGird+="Field8:\""+RevisedTarget+"\"";
 					objGird+="}";
 				i++;	
 				});
