@@ -38,7 +38,9 @@ $(document).ready(function(){
 				type:'get',
 				dataType:'text',
 				async:false,
+				cache: false,
 				success:function(data){
+				//alert(data);
 				userNameLogin=$.trim(data);
 				}
 			});
