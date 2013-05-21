@@ -541,7 +541,7 @@ $("#"+gridName+" tbody tr").each(function(){
 $(".k-grid-header-wrap table thead tr th.k-header").live("click",function(){
 
 	var gridName=($(this).parent().parent().parent().parent().parent().parent().parent().attr("id"));
-	//setTextForSort(gridName);
+	setTextForSort(gridName);
 });
 //--end
 //grid();
