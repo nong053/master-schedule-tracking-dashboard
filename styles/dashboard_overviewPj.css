@@ -115,7 +115,14 @@
 	float: left;
 	width:33px;
 	height:31px;
-	background-image:url(../images/delay.png);
+	/*background-image:url(../images/delay.png);*/
 	margin-left: 25px;
 	
+}
+.linkPjArea{
+display:inline;
+}
+.linkPj{
+margin-top:5px;
+display:inline;
 }

@@ -453,6 +453,7 @@ $(document).ready(function(){
 				 },
 	              {
 	                  field: "Field4",
+					 type: "number" 
 					  //width:100
 				 },
 	              {
@@ -461,14 +462,17 @@ $(document).ready(function(){
 				 },
 	              {
 	                  field: "Field6",
+					  type: "number" 
 					  //width: 100
 				 },
 	              {
 	                  field: "Field7",
+					  type: "number" 
 					  //width: 100
 				 },
 	              {
 	                  field: "Field8",
+					  type: "number" 
 					  //width: 90
 				 }];
 	
@@ -535,8 +539,9 @@ $("#"+gridName+" tbody tr").each(function(){
 }
 //k-header
 $(".k-grid-header-wrap table thead tr th.k-header").live("click",function(){
+
 	var gridName=($(this).parent().parent().parent().parent().parent().parent().parent().attr("id"));
-	setTextForSort(gridName);
+	//setTextForSort(gridName);
 });
 //--end
 //grid();
@@ -593,13 +598,13 @@ $(".k-grid-header-wrap table thead tr th.k-header").live("click",function(){
 						RevisedTarget=EntryIndex[7];
 					}
 					objGird+="Field1:\""+EntryIndex[0]+"\",";
-					objGird+="Field2:\""+EntryIndex[1]+"\",";
+					objGird+="Field2:\""+parseInt(EntryIndex[1])+"\",";
 					objGird+="Field3:\""+EntryIndex[2]+"\",";
-					objGird+="Field4:\""+EntryIndex[3]+"\",";
+					objGird+="Field4:\""+parseInt(EntryIndex[3])+"\",";
 					objGird+="Field5:\""+actualDate+"\",";
-					objGird+="Field6:\""+EntryIndex[5]+"\",";
-					objGird+="Field7:\""+responsibility+"\",";
-					objGird+="Field8:\""+RevisedTarget+"\"";
+					objGird+="Field6:\""+parseInt(EntryIndex[5])+"\",";
+					objGird+="Field7:\""+parseInt(responsibility)+"\",";
+					objGird+="Field8:\""+parseInt(RevisedTarget)+"\"";
 					objGird+="}";
 				i++;	
 				});
@@ -838,5 +843,11 @@ $(".k-grid-header-wrap table thead tr th.k-header").live("click",function(){
 	$(this).hide();
 	
 	}); 
+
+	$(".linkPj").live("click",function(event){
+		var id = $.trim($(this).attr("id"));
+		newTab(id,$("#embedParamMonth").val(),$("#embedParamYear").val());
+		event.stopPropagation();
+	});
 
 });
