@@ -631,7 +631,7 @@ $(".k-grid-header-wrap table thead tr th.k-header").live("click",function(){
 		data:{"paramUserName":userNameLogin,"paramYear":$("#embedParamYear").val(),"paramMonth":$("#embedParamMonth").val()},
 		async:false,
 		success:function(data){
-			//alert(data);
+			if(data!=""){
 			user_level=data[0][0];//user_level
 			golbal_user_level=data[0][0];
 			user_data=data[0][1];//user_data
@@ -663,6 +663,7 @@ $(".k-grid-header-wrap table thead tr th.k-header").live("click",function(){
 			
 			
 		}
+		}//if data is null
 	});
 	};
 	//--end
