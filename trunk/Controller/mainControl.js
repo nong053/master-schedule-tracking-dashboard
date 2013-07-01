@@ -113,11 +113,7 @@ $(document).ready(function(){
 		 $("#tabPruksa").tabs();
 		 //$("#tabBsc").hide();
 		 $(".ui-tabs-panel").css({"padding":"0px","background":"#DEEDF7"});
-		 
-		 
-		 
-		 
-		 
+
 		 $("a[href=#tab1]").click(function(){
 			 functionOverviewPage();
 			
@@ -448,7 +444,7 @@ $(document).ready(function(){
 					  //width: 310
 				 },
 	              {
-	                  field: "Field3",
+	                  field: "Field3"
 					  //width: 70
 				 },
 	              {
@@ -457,7 +453,7 @@ $(document).ready(function(){
 					  //width:100
 				 },
 	              {
-	                  field: "Field5",
+	                  field: "Field5"
 					  //width: 70
 				 },
 	              {
@@ -486,7 +482,7 @@ $(document).ready(function(){
                      Field5: "<div id='textR'>25</div>",
 					 Field6:"4,500 (ล้านบาท)",
 					 Field7:"2,000(ล้านบาท)",
-					 Field8: " <div id='textR'>0.44</div>",
+					 Field8: " <div id='textR'>0.44</div>"
                      
                  },
                  {
@@ -497,7 +493,7 @@ $(document).ready(function(){
                      Field5: "<div id='textR'>25</div>",
 					 Field6:"4,500 (ล้านบาท)",
 					 Field7:"2,000(ล้านบาท)",
-					 Field8: " <div id='textR'>0.44</div>",
+					 Field8: " <div id='textR'>0.44</div>"
 					 
 				},
                  {
@@ -508,7 +504,7 @@ $(document).ready(function(){
                      Field5: "<div id='textR'>25</div>",
 					 Field6:"4,500 (ล้านบาท)",
 					 Field7:"2,000(ล้านบาท)",
-					 Field8: " <div id='textR'>0.44</div>",
+					 Field8: " <div id='textR'>0.44</div>"
 					
                  }
 				]; 
